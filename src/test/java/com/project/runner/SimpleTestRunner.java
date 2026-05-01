@@ -13,6 +13,11 @@ package com.project.runner;
     public class TestRunner extends AbstractTestNGCucumberTests {
         
         @Test(priority = 0)
+        public void runSheet1() {
+            runCucumberFeature("src/test/resources/com/postmanConnection/features/Sheet1.feature");
+        }
+    
+    @Test(priority = 1)
         public void runVieweventstatus() {
             runCucumberFeature("src/test/resources/com/postmanConnection/features/ViewEventStatus.feature");
         }
